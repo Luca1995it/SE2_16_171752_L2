@@ -7,14 +7,47 @@
     <body bgcolor="#c6e2ff">
         <h1>Warehouse</h1>
         <table>
-            <table border="1" width="250" id="original" bgcolor="#ccff00"></table>
-            <br>
+            <tr>
+                <td>
+                    <!-- Tabella del carrello -->
+                    <table border="1" width="250" id="original" bgcolor="#ccff00"></table>
+                    <br>
         
-            <button onclick="display()" id="displayButton">Order other items</button>
-            
+                    <!-- Buttone che mostra gli input per nuovi articoli -->
+                    <button onclick="display()" id="displayButton">Order other items</button>
+                </td>
+                <td width="100"></td>
+                <td>
+                    <table id="table2" hidden bgcolor="#ff7373">
+                        <tr>
+                            <th>Name</th>
+                            <th>Number</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="itemName"/></td>
+                            <td><input type="number" id="itemNumber" min="1"/></td>
+                        </tr>
+                    </table>
+                    <button onclick="order()" id="orderButton" hidden>Go!</button>
+                    <br>
+                    <font id="errorMessage" class="warning"></font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Insert the maximun number of items in the warehouse<br>
+                        <div id="maxNum"></div>
+                    </p>
+                    
+                    <input type="number" id="setMax"/>
+                    <button onclick="set()">Set</button>
+                    <br>
+                    <font id="errMessage" class="warning"></font>
+                </td>
+            </tr>
+        
         </table>
-        <br>
-        
         <script src="script.js"></script>
     </body>
 </html>
