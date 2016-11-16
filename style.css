@@ -1,0 +1,13 @@
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr{
+    height: 30;
+}
+
+.warning{
+    color: red;
+    font-size: 18;
+}
