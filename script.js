@@ -26,8 +26,8 @@ var setMax = document.getElementById("setMax");
 //link to the error message of the set max function
 var errMessage = document.getElementById("errMessage");
 
-//the max number of items in the warehouse, default 1000
-var max = 1000;
+//the max number of items in the warehouse, default 30
+var max = 30;
 
 //displaing the default value of Max
 maxNum.innerHTML = "Max: " + max;
@@ -200,7 +200,7 @@ function drawChart(matrix,original){
         var th1 = document.createElement("TH");
         var th2 = document.createElement("TH");
         th1.innerHTML = "Name";
-        th2.innerHTML = "Number";
+        th2.innerHTML = "Quantity";
         header.appendChild(th1);
         header.appendChild(th2);
         
