@@ -17,6 +17,20 @@
                     <button onclick="display()" id="displayButton">Order other items</button>
                 </td>
                 <td width="100"></td>
+                
+                <td>
+                    <p>
+                        Insert the maximun number of items in the warehouse<br>
+                        <div id="maxNum"></div>
+                    </p>
+                    
+                    <input type="number" id="setMax"/>
+                    <button onclick="set()">Set</button>
+                    <br>
+                    <font id="errMessage" class="warning"></font>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <table id="table2" hidden bgcolor="#ff7373">
                         <tr>
@@ -31,19 +45,6 @@
                     <button onclick="order()" id="orderButton" hidden>Go!</button>
                     <br>
                     <font id="errorMessage" class="warning"></font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Insert the maximun number of items in the warehouse<br>
-                        <div id="maxNum"></div>
-                    </p>
-                    
-                    <input type="number" id="setMax"/>
-                    <button onclick="set()">Set</button>
-                    <br>
-                    <font id="errMessage" class="warning"></font>
                 </td>
             </tr>
         
